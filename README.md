@@ -4,7 +4,7 @@ Este projeto é uma simples API para gerenciamento de uma **tranca eletrônica c
 
 ---
 > ⚠️ **OBS: Esse projeto funciona em conjunto com a [Tranca Eletronica RFID com ESP32](<https://github.com/MatheusH2021/tranca-eletronica-rfid.git>)  
-> Para funcionamento completo, clone e configure o repositório da API também!
+> Para funcionamento completo, clone e configure o repositório da Tranca eletronica também!
 ## 🚀 Tecnologias Utilizadas
 
 - Node.js
@@ -129,7 +129,6 @@ npm start
 - Interface web para gerenciamento de tags
 - Painel administrativo com autenticação
 - Histórico de acessos
-- Sistema de permissões por tag
 
 ---
 
@@ -141,3 +140,4 @@ npm start
 - ESP32 com firmware e conexão ao broker
 
 ---
+
