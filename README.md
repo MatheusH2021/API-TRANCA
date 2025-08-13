@@ -85,6 +85,11 @@ npm start
   "ativo": "sim"
 }
 ```
+### ➕ Ativar/Desativar uma tag
+
+- **Método:** `PUT`  
+- **Endpoint:** `http://127.0.0.1:3000/tags/edit/<uid_da_tag>`  
+- **Exemplo de corpo da requisição (JSON):**
 
 ### ❌ Excluir uma tag pelo UID
 
