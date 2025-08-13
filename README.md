@@ -9,6 +9,7 @@ Este projeto é uma simples API para gerenciamento de uma **tranca eletrônica c
 
 - Node.js
 - Express.js
+- Mongoose
 - MongoDB
 - MQTT.js
 
@@ -140,4 +141,5 @@ npm start
 - ESP32 com firmware e conexão ao broker
 
 ---
+
 
