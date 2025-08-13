@@ -34,14 +34,36 @@ const tagsController = {
            const id = req.params.id;
            let results = await TagModel.findOne({uid: id}); 
            if (results) {
-               res.send(results).status(200); 
+                res.send(results).status(200); 
            } else {
                 res.send({"msg":"Unnauthorized"}).status(401); 
            }
        } catch (error) {
            console.log(error);
        }
-    },    
+    },
+    
+    update: async (req, res) => {
+        try{
+            const id = req.params.id;
+            let tag = await TagModel.findOne({uid: id});
+
+            if (tag) {
+                if (tag.ativo === "sim") {
+                    tag.ativo = "nao";
+                    await TagModel.updateOne({uid: id}, tag)
+                    return res.send({"msg":"Tag desativada com sucesso!"}).status(200);
+                } else if (tag.ativo === "nao") {
+                    tag.ativo = "sim";
+                    await TagModel.updateOne({uid: id}, tag)
+                    return res.send({"msg":"Tag ativada com sucesso!"}).status(200);
+                }
+            }
+        } catch (error) {
+           console.log(error);
+        }
+    },
+    
 };
  
 module.exports = tagsController;
