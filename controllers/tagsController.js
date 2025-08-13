@@ -58,12 +58,14 @@ const tagsController = {
                     await TagModel.updateOne({uid: id}, tag)
                     return res.send({"msg":"Tag ativada com sucesso!"}).status(200);
                 }
+            } else {
+                return res.send({"msg":"Tag não encontrada"}).status(404);
             }
         } catch (error) {
            console.log(error);
         }
     },
-    
+
 };
  
 module.exports = tagsController;
