@@ -132,7 +132,6 @@ npm start
 ## 🛠️ Melhorias Futuras
 
 - Interface web para gerenciamento de tags
-- Painel administrativo com autenticação
 - Histórico de acessos
 
 ---
@@ -145,6 +144,7 @@ npm start
 - ESP32 com firmware e conexão ao broker
 
 ---
+
 
 
 
