@@ -1,5 +1,5 @@
 const mqtt = require("mqtt");
-const client = mqtt.connect("http://<SEU BROKER AQUI>");
+const client = mqtt.connect("mqtt://<SEU BROKER MQTT AQUI>");
 const tagsController = require("../controllers/tagsController");
 
 // Tópicos
